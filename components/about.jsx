@@ -2,9 +2,9 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className="w-full md:h-screen p-5 flex items-center py-16">
+    <div id="about" className="w-full md:h-screen p-5 flex items-center py-16">
       <div className="max-w-[1240px] mx-auto md:grid grid-cols-3 gap-8">
-        <div class="col-span-2">
+        <div className="col-span-2">
           <p className="uppercase tracking-widest text-blue-600">About</p>
           <h2 className="py-4">Who Am I</h2>
           <p className="py-2 text-gray-600">I'm a Fulstack Developer</p>
