@@ -1,5 +1,5 @@
-import Image from 'next/image'
 import React from 'react'
+import SkillItem from './skillItem'
 
 const Skill = () => {
   return (
@@ -8,86 +8,14 @@ const Skill = () => {
         <p className="uppercase tracking-widest text-blue-600 font-semibold">Skill</p>
         <h2 className="py-4">What I Can Do</h2>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <Image src="/assets/html.png" alt="Image" width="64" height="64" />
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                <h3>HTML</h3>
-              </div>
-            </div>
-          </div>
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <Image src="/assets/css.png" alt="Image" width="64" height="64" />
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                <h3>CSS</h3>
-              </div>
-            </div>
-          </div>
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <Image src="/assets/js.png" alt="Image" width="64" height="64" />
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                <h3>Javascript</h3>
-              </div>
-            </div>
-          </div>
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <Image src="/assets/bootstrap.png" alt="Image" width="64" height="64" />
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                <h3>Bootstrap</h3>
-              </div>
-            </div>
-          </div>
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <Image src="/assets/react.png" alt="Image" width="64" height="64" />
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                <h3>React</h3>
-              </div>
-            </div>
-          </div>
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <Image src="/assets/tailwind.png" alt="Image" width="64" height="64" />
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                <h3>Tailwind</h3>
-              </div>
-            </div>
-          </div>
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <Image src="/assets/php.png" alt="Image" width="64" height="64" />
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                <h3>PHP</h3>
-              </div>
-            </div>
-          </div>
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <Image src="/assets/python.png" alt="Image" width="64" height="64" />
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                <h3>Python</h3>
-              </div>
-            </div>
-          </div>
+          <SkillItem name="HTML" imageUrl="/assets/html.png" />
+          <SkillItem name="CSS" imageUrl="/assets/css.png" />
+          <SkillItem name="Javascript" imageUrl="/assets/js.png" />
+          <SkillItem name="Bootstrap" imageUrl="/assets/bootstrap.png" />
+          <SkillItem name="React" imageUrl="/assets/react.png" />
+          <SkillItem name="Tailwind" imageUrl="/assets/tailwind.png" />
+          <SkillItem name="PHP" imageUrl="/assets/php.png" />
+          <SkillItem name="Python" imageUrl="/assets/python.png" />
         </div>
       </div>
     </div>
