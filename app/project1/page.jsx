@@ -21,14 +21,14 @@ const Project1 = () => {
           <button className="px-8 py-2 mt-4 mr-8">Demo</button>
           <button className="px-8 py-2 mt-4">Github</button>
         </div>
-        <div className="col-span-5 md:col-span-2 shadow-xl shadow-gray-400 rounded-xl p-4">
+        <div className="col-span-5 md:col-span-2 rounded-lg shadow-sm bg-white dark:bg-gray-800 dark:text-white p-4">
           <div className="p-5">
             <p className="text-center font-bold pb-2">Technologies</p>
-            <div>
-              <p className="text-gray-600 py-2 flex items-center"><MdRadioButtonChecked className="mr-2" /> React</p>
-              <p className="text-gray-600 py-2 flex items-center"><MdRadioButtonChecked className="mr-2" /> Tailwind</p>
-              <p className="text-gray-600 py-2 flex items-center"><MdRadioButtonChecked className="mr-2" /> HTML</p>
-              <p className="text-gray-600 py-2 flex items-center"><MdRadioButtonChecked className="mr-2" /> MySQL</p>
+            <div className=" text-gray-600 dark:text-gray-300">
+              <p className="py-2 flex items-center"><MdRadioButtonChecked className="mr-2" /> React</p>
+              <p className="py-2 flex items-center"><MdRadioButtonChecked className="mr-2" /> Tailwind</p>
+              <p className="py-2 flex items-center"><MdRadioButtonChecked className="mr-2" /> HTML</p>
+              <p className="py-2 flex items-center"><MdRadioButtonChecked className="mr-2" /> MySQL</p>
             </div>
           </div>
         </div>

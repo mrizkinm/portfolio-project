@@ -3,6 +3,7 @@ import React from 'react'
 import { AiOutlineMail } from 'react-icons/ai'
 import { FaGithub, FaInstagram, FaLinkedinIn } from 'react-icons/fa'
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi'
+import LinkSocial from './linkSocial'
 
 const Contact = () => {
   return (
@@ -11,7 +12,7 @@ const Contact = () => {
         <p className="uppercase tracking-widest text-blue-600 font-semibold">Contact</p>
         <h2 className="py-4">Get In Touch</h2>
         <div className="grid md:grid-cols-5 gap-8">
-          <div className="col-span-3 md:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
+          <div className="col-span-3 md:col-span-2 w-full h-full shadow-lg shadow-gray-600 rounded-xl p-4">
             <div className="lg:p-4 h-full">
               <div>
                 <img className="rounded-lg hover:scale-105 ease-in duration-300 w-full" src="/assets/contact.jpg" />
@@ -24,23 +25,15 @@ const Contact = () => {
               <div>
                 <p className="uppercase pt-4">Social Media</p>
                 <div className="flex items-center justify-between py-4">
-                  <div className="rounded-full shadow-lg shadow-gray-400 cursor-pointer p-5 hover:scale-105 ease-in duration-300">
-                    <FaLinkedinIn />
-                  </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 cursor-pointer p-5 hover:scale-105 ease-in duration-300">
-                    <FaGithub />
-                  </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 cursor-pointer p-5 hover:scale-105 ease-in duration-300">
-                    <AiOutlineMail />
-                  </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 cursor-pointer p-5 hover:scale-105 ease-in duration-300">
-                    <FaInstagram />
-                  </div>
+                  <LinkSocial icon={<FaLinkedinIn />} url="https://linked.in" />
+                  <LinkSocial icon={<FaGithub />} url="https://github.com" />
+                  <LinkSocial icon={<AiOutlineMail />} url="https://gmail.com" />
+                  <LinkSocial icon={<FaInstagram />} url="https://instagram.com" />
                 </div>
               </div>
             </div>
           </div>
-          <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl p-4">
+          <div className="col-span-3 w-full h-auto shadow-lg shadow-gray-600 rounded-xl p-4">
             <div className="lg:p-4">
               <form>
                 <div className="flex flex-col">
@@ -70,7 +63,7 @@ const Contact = () => {
         </div>
         <div className="flex justify-center py-12">
           <Link href="/">
-            <div className="rounded-full shadow-lg shadow-gray-400 cursor-pointer p-3 hover:scale-105 ease-in duration-300">
+            <div className="rounded-full shadow-lg shadow-gray-600 cursor-pointer p-3 hover:scale-105 ease-in duration-300">
               <HiOutlineChevronDoubleUp className="text-blue-600" size={20} />
             </div>
           </Link>
