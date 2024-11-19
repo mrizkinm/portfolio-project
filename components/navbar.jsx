@@ -44,7 +44,7 @@ const Navbar = () => {
 
   return (
     <div className={shadow ? 'fixed w-full h-20 shadow-xl z-[100] bg-[#ecf0f3] text-[#1f2937] dark:bg-gray-900 dark:text-white' : 'fixed w-full h-20 z-[100] bg-[#ecf0f3] text-[#1f2937] dark:bg-gray-900 dark:text-white'}>
-      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
+      <div className="max-w-[1240px] mx-auto flex justify-between items-center w-full px-5">
         <Link href="/">
           <Image src="/assets/logo.png" alt="Image" width="60" height="60" />
         </Link>

@@ -6,11 +6,11 @@ import LinkSocial from './linkSocial'
 const Main = () => {
   return (
     <div id="main" className="w-full h-screen text-center">
-      <div className="max-w-[1240px] w-full h-full mx-auto p-3 flex justify-center items-center">
+      <div className="max-w-[1240px] w-full h-full mx-auto p-5 flex justify-center items-center">
         <div>
           <p className="uppercase text-sm tracking-widest text-gray-700 dark:text-gray-200">Let's Build Something Together</p>
           <h1 className="pt-2">Hi, I'm <span className="text-blue-700">Rizki</span></h1>
-          <h1 className="py-4 text-gray-700 dark:text-gray-200">Hi, I'm A Full Stack Developer</h1>
+          <h1 className="py-4 text-gray-700 dark:text-gray-200">I'm A Full Stack Developer</h1>
           <p className="py-4 text-gray-600 dark:text-gray-300 max-w-[70%] m-auto">
             I'm a full stack developer specializing in building front end and back end web applications also android mobile applications
           </p>
