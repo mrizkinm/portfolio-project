@@ -5,7 +5,7 @@ const About = () => {
     <div id="about" className="w-full p-5 flex items-center py-16">
       <div className="max-w-[1240px] mx-auto grid grid-cols-5 gap-8">
         <div className="col-span-5 md:col-span-3 xl:col-span-3">
-          <p className="uppercase tracking-widest text-blue-600">About</p>
+          <p className="uppercase tracking-widest text-blue-600">About Me</p>
           <h2 className="py-4">Who Am I</h2>
           <p className="py-2 text-gray-600 dark:text-gray-300">I'm a Fulstack Developer</p>
           <p className="py-2 text-gray-600 dark:text-gray-300 text-justify">
